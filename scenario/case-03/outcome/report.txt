@@ -1,0 +1,23 @@
+Kết quả cho cột incorrect:
+[[ 11   2]
+ [ 33 104]]
+Precision: 0.981
+Recall: 0.759
+F1: 0.856
+Accuracy: 0.767
+
+Kết quả cho cột incomplete:
+[[  8  21]
+ [  3 118]]
+Precision: 0.849
+Recall: 0.975
+F1: 0.908
+Accuracy: 0.840
+
+Kết quả cho cột inconsistent:
+[[68 30]
+ [37 15]]
+Precision: 0.333
+Recall: 0.288
+F1: 0.309
+Accuracy: 0.553

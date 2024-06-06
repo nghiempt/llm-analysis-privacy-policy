@@ -1,0 +1,17 @@
+Case,Category,P,R,F1,A
+Case 1,Incorrect,0.942,0.825,0.879,0.793
+Case 1,Incomplete,0.828,0.595,0.692,0.573
+Case 2,Incorrect,0.951,0.993,0.971,0.947
+Case 2,Incomplete,0.844,0.983,0.908,0.840
+Case 3,Incorrect,0.981,0.759,0.856,0.767
+Case 3,Incomplete,0.849,0.975,0.908,0.840
+Case 4,Incorrect,0.919,1.000,0.958,0.920
+Case 4,Incomplete,0.807,1.000,0.893,0.807
+Case 5,Incorrect,0.938,1.000,0.968,0.940
+Case 5,Incomplete,0.834,1.000,0.910,0.840
+Case 6,Incorrect,0.971,0.730,0.833,0.733
+Case 6,Incomplete,0.877,0.942,0.908,0.847
+Case 7,Incorrect,0.932,1.000,0.965,0.933
+Case 7,Incomplete,0.857,0.992,0.920,0.860
+Case 8,Incorrect,0.945,1.000,0.972,0.947
+Case 8,Incomplete,0.851,0.992,0.916,0.853

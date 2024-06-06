@@ -1,0 +1,59 @@
+Dataset
+    600 apps
+        300 apps (extend)
+        300 apps (manual label)
+            150 apps test
+            150 apps train
+
+Method
+Scenario 01
+    case 01
+        method: zero-shot
+        model: gpt-3.5
+        data-train: 150-test.csv
+        data-test: 150-test.csv
+
+Scenario 02
+    case 02
+        method: fine-tuning
+        model: gpt-3.5
+        data-train: 150-train.csv
+        data-test: 150-test.csv
+
+Scenario 03
+    case 03
+        method: use LLM to label 150-train
+        model: gpt-4
+        data-train: 150-train-llm-label.csv
+        data-test: 150-test.csv
+
+    case 04
+        method: use LLM to label 150-train
+        model: gpt-4o
+        data-train: 150-train-llm-label.csv
+        data-test: 150-test.csv
+
+    case 05
+        method: use LLM to label 150-train
+        model: gemini-1.5
+        data-train: 150-train-llm-label.csv
+        data-test: 150-test.csv
+
+Scenario 04
+    case 06
+        method: use LLM to label 450-train
+        model: gpt-4
+        data-train: 450-train-llm-label.csv
+        data-test: 150-test.csv
+
+    case 07
+        method: use LLM to label 450-train
+        model: gpt-4o
+        data-train: 450-train-llm-label.csv
+        data-test: 150-test.csv
+
+    case 08
+        method: use LLM to label 450-train
+        model: gemini-1.5
+        data-train: 450-train-llm-label.csv
+        data-test: 150-test.csv
