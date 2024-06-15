@@ -1,0 +1,57 @@
+AppID: 206
+AppName: Miss International
+AppPkg: com.choicely.miss.international
+Data Safety URL: https://play.google.com/store/apps/datasafety?id=com.choicely.miss.international
+Privacy Policy URL: https://www.miss-international.org/en/privacy/
+
+prompt:
+system: You are an expert in analyzing the correctness, completeness, and consistency between the Privacy Policy and Data Safety information provided by Android applications.
+user: Let's compare and analyze the information between Data Safety and Privacy Policy to clarify 2 issues: which information is incorrect and which information is incomplete. 
+Notes when classifying: 
+Incomplete: Data Safety provides information but is not as complete as the Privacy Policy provides. 
+Incorrect: Data Safety does not provide that information, but the Privacy Policy mentions it. 
+Note: always gives me the result (0 or 1, 1 is yes, 0 is no) in the form below: {'incorrect': (0 or 1), 'incomplete': (0 or 1)}. 
+Please in the answer, just give me the json only and in English. Below is information for 2 parts: 
+Data Safety: {'data_shared': [], 'data_collected': [{'category': 'Personal info', 'sub_info': [{'data_type': 'Name', 'purpose': 'Account management', 'optional': True}, {'data_type': 'Email address', 'purpose': 'Account management', 'optional': True}]}, {'category': 'Device or other IDs', 'sub_info': [{'data_type': 'Device or other IDs', 'purpose': 'Analytics', 'optional': False}]}, {'category': 'App activity', 'sub_info': [{'data_type': 'App interactions', 'purpose': 'Analytics', 'optional': False}]}, {'category': 'App info and performance', 'sub_info': [{'data_type': 'Crash logs', 'purpose': 'Analytics', 'optional': False}, {'data_type': 'Diagnostics', 'purpose': 'Analytics', 'optional': False}, {'data_type': 'Other app performance data', 'purpose': 'Analytics', 'optional': False}]}], 'security_practices': [{'category': 'Data is encrypted in transit', 'sub_info': []}, {'category': 'You can request that data be deleted', 'sub_info': []}]}. 
+Privacy Policy: 
+Data Share: The content does not specify any explicit data sharing practices, although the community guidelines do point out that comments with personal information leaks will not be deleted. This implies a degree of public information sharing within the community. However, implications of sharing user's information with third parties or other entities aren't mentioned. 
+Data Collect: The privacy policy does not specify the types of data it collects from the users. It only states the website is for exchanging information and news about Miss International and user comments will not be deleted. While it doesn't specifically detail the type of user information it collects, the mention of not deleting comments containing personal information leaks suggests that user comments might be stored. Also, if users are engaging through comments, it might be inferred that user data such as username or user ID could be collected.
+
+{
+    "model": "gpt-4",
+    "messages": [
+        {
+            "role": "system",
+            "content": system
+        },
+        {
+            "role": "user",
+            "content": user
+        }
+    ],
+    "temperature": 0.7
+}
+
+{
+    "id": "chatcmpl-9axxxxxxxxxx",
+    "object": "chat.completion",
+    "created": 1718439928,
+    "model": "gpt-4-0613",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "{'incorrect': 1, 'incomplete': 1}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 590,
+        "completion_tokens": 13,
+        "total_tokens": 603
+    },
+    "system_fingerprint": null
+}

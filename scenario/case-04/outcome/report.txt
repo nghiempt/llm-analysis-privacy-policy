@@ -1,4 +1,4 @@
-Kết quả cho cột incorrect:
+========== incorrect:
 [[  1  12]
  [  0 137]]
 Precision: 0.919
@@ -6,7 +6,7 @@ Recall: 1.000
 F1: 0.958
 Accuracy: 0.920
 
-Kết quả cho cột incomplete:
+========== incomplete:
 [[  0  29]
  [  0 121]]
 Precision: 0.807
@@ -14,7 +14,7 @@ Recall: 1.000
 F1: 0.893
 Accuracy: 0.807
 
-Kết quả cho cột inconsistent:
+========== inconsistent:
 [[98  0]
  [52  0]]
 Precision: 0.000

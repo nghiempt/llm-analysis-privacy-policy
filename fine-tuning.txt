@@ -1,0 +1,34 @@
+# FINE TUNING OPENAI (https://platform.openai.com/docs/guides/fine-tuning)
+
+Step 01: Prepare data
+- Prepare data format JSONL and at least 50 pairs. Must follow format messages. Follow website to know.
+
+Step 02: Upload file
+curl --location 'https://api.openai.com/v1/files' \
+--header 'Authorization: Bearer sk-xxxxxxxxxx' \
+--form 'purpose="fine-tune"' \
+--form 'file=@"scenario/case-04/data/150-train-llm-process.jsonl"'
+
+Step 03: Create Job Fine-tune 
+curl --location 'https://api.openai.com/v1/fine_tuning/jobs' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer sk-xxxxxxxxxx' \
+--data '{
+  "training_file": "file-pKxxxxxxxxxx",
+  "model": "gpt-3.5-turbo-0613"
+}'
+
+Step 04: Waiting and following fine-tune step
+curl --location 'https://api.openai.com/v1/fine_tuning/jobs/ftjob-gxxxxxxxxxx/events' \
+--header 'Authorization: Bearer sk-xxxxxxxxxx'
+
+Follow below output to get model ID fine-tuned 
+{
+    "object": "fine_tuning.job.event",
+    "id": "ftevent-xxxxxxxxxx",
+    "created_at": 1717673684,
+    "level": "info",
+    "message": "New fine-tuned model created: ft:gpt-3.5-turbo-0613:iu-group-chatgpt-access::xxxxxxxxxx",
+    "data": {},
+    "type": "message"
+},
