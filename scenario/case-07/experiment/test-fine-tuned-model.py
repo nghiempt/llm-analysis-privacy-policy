@@ -27,7 +27,7 @@ class HANDLER:
                 },
             ]
             response = openai.ChatCompletion.create(
-                model=os.getenv("MODEL_GPT_4o"), messages=prompt_message
+                model=os.getenv("GPT3_5FT_BY_4o_LABEL_450"), messages=prompt_message
             )
             assistant_reply = response.choices[0].message["content"]
             return assistant_reply
@@ -67,8 +67,8 @@ async def main():
     load_dotenv()
     openai.api_key = os.getenv("OPENAI_API_KEY")
 
-    input_csv_path = "/Users/nghiempt/Src/Research/conf_a&p_2025/scenario/case-07/data/450-train-need.csv"
-    output_csv_path = "/Users/nghiempt/Src/Research/conf_a&p_2025/scenario/case-07/data/450-train-llm.csv"
+    input_csv_path = "scenario/case-07/data/150-test-none.csv"
+    output_csv_path = "scenario/case-07/data/150-test-ft.csv"
 
     await HANDLER().loop_csv(input_csv_path, output_csv_path)
 

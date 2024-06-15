@@ -28,10 +28,10 @@ def csv_to_json(csv_file):
 
       data.append(json_object)
 
-  with open('/Users/nghiempt/Src/Research/conf_a&p_2025/scenario/case-07/data/450-train-llm-process.json', 'w', encoding='utf-8') as jsonfile:
+  with open('scenario/case-07/data/450-train-llm-process.json', 'w', encoding='utf-8') as jsonfile:
     json.dump(data, jsonfile, indent=4)
 
-csv_file = '/Users/nghiempt/Src/Research/conf_a&p_2025/scenario/case-07/data/450-train-llm-process.csv'
+csv_file = 'scenario/case-07/data/450-train-llm-process.csv'
 csv_to_json(csv_file)
 
 print("JSON file 'app_data.json' created successfully.")
