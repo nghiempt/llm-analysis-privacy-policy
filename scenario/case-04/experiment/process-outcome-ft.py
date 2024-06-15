@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd # type: ignore
 import json
 
 df = pd.read_csv('scenario/case-04/data/150-test-ft.csv')
