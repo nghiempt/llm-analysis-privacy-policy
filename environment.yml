@@ -1,0 +1,13 @@
+name: llm-analysis-privacy-policy
+channels:
+  - defaults
+dependencies:
+  # Should be on every project
+  - python==3.10.*
+  - numpy
+  - scipy
+  - matplotlib
+  - jupyterlab
+  # Project specific dependencies
+  - pandas
+  - openai
