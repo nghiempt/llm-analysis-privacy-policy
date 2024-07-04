@@ -38,26 +38,33 @@ All Python source code (including .py and .ipynb files) is made available under 
 
 |App ID|App Name|App Package|Category|Downloads|Incorrect|Incomplete|
 | ------------- | -------------  | ------------- | ------------- | ------------- | ------------- | ------------- |
-| 1             | aaa | com.aaa | 0 | 0 | 0 | 0 |
-| 1             | aaa | com.aaa | 0 | 0 | 0 | 0 |
-| 1             | aaa | com.aaa | 0 | 0 | 0 | 0 |
-| 1             | aaa | com.aaa | 0 | 0 | 0 | 0 |
-| 1             | aaa | com.aaa | 0 | 0 | 0 | 0 |
-| 1             | aaa | com.aaa | 0 | 0 | 0 | 0 |
+| 1             | T Shirt Design - T Shirts Art | fusion.developers.shirtdesign | 1 | 100K+ | 1 | 1 |
+| 2             | Byoh - Health, Beauty, Celebri | com.etm.smyouth | 2 | 100K+ | 1 | 1 |
+| 3             | Inkspired | com.inkspiredwriter | 3 | 500K+ | 1 | 1 |
+| 4             | Sell books with Ziffit | uk.co.brightec.ziffit | 4 | 10K+ | 1 | 0 |
+| 5             | Spark Voicemail | com.norwood.sparkvm | 5 | 500K+ | 0 | 0 |
+| 6             | HCMToGo | com.hcmtogo.workforceready | 6 | 1M+ | 1 | 1 |
+| 7             | Mirror | com.studio360apps.mirror | 2 | 10K+ | 1 | 1 |
+| 8             | Face Beauty for App Video Call | facebeauty.videocall.app | 2 | 1M+ | 0 | 0 |
+| 9             | BookFinder | com.Readerlink.BookFinder | 3 | 100K+ | 1 | 0 |
+| 10             | Bambooks | com.bambooks | 3 | 10K+ | 0 | 0 |
 
 |Category|Number of apps|#|Number of downloads|Number of apps|
 |---|---|---|---|---|
-|aaa|0 apps|#|100 - 1000|0 apps|
-|aaa|0 apps|#|100 - 1000|0 apps|
-|aaa|0 apps|#|100 - 1000|0 apps|
+|Art & Design|100 apps|#|100 - 1000|100 apps|
+|Beauty|100 apps|#|100 - 1000|100 apps|
+|Books & Reference|100 apps|#|100 - 1000|100 apps|
+|Business|100 apps|#|100 - 1000|100 apps|
+|Communication|100 apps|#|100 - 1000|100 apps|
+|Lifestyle|100 apps|#|100 - 1000|100 apps|
 
 ## Models <a name="models"></a>
 
 |Model|Params|
 |---|---|
-|aaa|100B|
-|aaa|100B|
-|aaa|100B|
+|GPT 4|175B|
+|GPT4o|200B|
+|Gemini|1.5B|
 
 # <a name="3"></a> Implementation
 
